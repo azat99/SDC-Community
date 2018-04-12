@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/silverthread1280x960"
+    tools:context="com.example.azatk.sdccommunity.LoginActivity">
+
+    <include layout="@layout/app_bar_layout"
+    android:id="@+id/login_toolbar"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Login to your Account"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="25dp"
+        android:layout_below="@+id/login_toolbar"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:layout_above="@+id/login_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Your Email"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/buttonshape2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="login"
+        android:color="#00f7f6f6"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

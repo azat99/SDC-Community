@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "936199565740",
+    "firebase_url": "https://sdc-community.firebaseio.com",
+    "project_id": "sdc-community",
+    "storage_bucket": "sdc-community.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936199565740:android:99ae5649e8226501",
+        "android_client_info": {
+          "package_name": "com.example.azatk.sdccommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936199565740-9gmi5qsbujt6k6cct2vsmkptu3enkgmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CQNsgu0eRx7roGFttCftImLYbDqHehk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

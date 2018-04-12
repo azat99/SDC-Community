@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.azatk.sdccommunity">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".SDCChat"
+        android:allowBackup="true"
+        android:icon="@drawable/untitled"
+        android:roundIcon="@drawable/untitled"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <data android:scheme="vk5115059" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartActivty" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivty" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivty" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".StatusActivity"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".UsersActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ProfileActivity">
+            <intent-filter>
+                <action android:name="com.example.azatk.sdccommunity_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".CreateGroupActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".GroupChatActivity"
+            android:parentActivityName=".MainActivity" ></activity>
+        <activity android:name=".CreateGroupActivity2"
+            android:parentActivityName=".MainActivity" ></activity>
+    </application>
+
+</manifest>

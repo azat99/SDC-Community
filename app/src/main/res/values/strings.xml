@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SDC Community</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="all_users">All Users</string>
+    <string name="account_sittings">Account Sittings</string>
+    <string name="create_group">Create Group</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sittings">SittingsActivity</string>
+    <string name="default_status">Hi there , I\'m using SDC Chat</string>
+
+    <integer name="com_vk_sdk_AppId">6288746</integer>
+</resources>

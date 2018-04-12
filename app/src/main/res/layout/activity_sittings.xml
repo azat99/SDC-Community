@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/silverthread1280x960"
+    tools:context="com.example.azatk.sdccommunity.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/default_person" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Display Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/default_status"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/settings_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:background="@drawable/buttonshape"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Change Image"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/settings_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settings_image_btn"
+        android:layout_alignStart="@+id/settings_image_btn"
+        android:layout_below="@+id/settings_image_btn"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/buttonshape"
+        android:paddingLeft="15dp"
+        android:paddingRight="16dp"
+        android:text="change status"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_single_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_person" />
+
+    <TextView
+        android:id="@+id/user_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_single_image"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/user_single_image"
+        android:layout_toRightOf="@+id/user_single_image"
+        android:text="Display Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_single_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_single_name"
+        android:layout_alignStart="@+id/user_single_name"
+        android:layout_below="@+id/user_single_name"
+        android:layout_marginTop="10dp"
+        android:text="User default status" />
+
+    <ImageView
+        android:id="@+id/user_single_online_icon"
+        android:layout_width="20dp"
+        android:visibility="invisible"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/user_single_name"
+        android:layout_toEndOf="@+id/user_single_status"
+        android:layout_toRightOf="@+id/user_single_status"
+        android:paddingTop="5dp"
+        android:src="@drawable/online_icon" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="Accept"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignBaseline="@+id/user_single_name"
+        android:layout_alignBottom="@+id/user_single_name"
+        android:layout_toRightOf="@+id/user_single_online_icon"
+        android:layout_toEndOf="@+id/user_single_online_icon" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_alignTop="@+id/user_single_status"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+</RelativeLayout>
